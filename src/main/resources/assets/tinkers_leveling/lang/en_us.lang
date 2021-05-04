@@ -1,0 +1,10 @@
+tooltip.xp=%s - %s/%s xp
+
+tooltip.level.1=§bBeginner
+tooltip.level.2=§dRookie
+tooltip.level.3=§aAdept
+tooltip.level.4=§cExpert
+tooltip.level.5=§4Pro
+tooltip.level.6=§5Master
+
+message.levelup=§bYou leveled up §a%s§b to §a%s§b!
