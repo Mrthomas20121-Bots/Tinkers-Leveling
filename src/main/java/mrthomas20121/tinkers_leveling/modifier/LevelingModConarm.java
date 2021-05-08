@@ -2,6 +2,7 @@ package mrthomas20121.tinkers_leveling.modifier;
 
 import c4.conarm.common.armor.utils.ArmorTagUtil;
 import c4.conarm.lib.armor.ArmorNBT;
+import c4.conarm.lib.modifiers.ArmorModifierTrait;
 import c4.conarm.lib.traits.AbstractArmorTrait;
 import mrthomas20121.tinkers_leveling.ModNBT;
 import mrthomas20121.tinkers_leveling.TinkersLeveling;
@@ -18,7 +19,7 @@ import slimeknights.tconstruct.library.utils.TagUtil;
 import slimeknights.tconstruct.library.utils.Tags;
 import slimeknights.tconstruct.library.utils.TinkerUtil;
 
-public class LevelingModConarm extends AbstractArmorTrait {
+public class LevelingModConarm extends ArmorModifierTrait {
 
     private LevelingModConarm() {
         super("leveling_mod_conarm", 0x0);

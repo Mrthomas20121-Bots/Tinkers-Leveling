@@ -15,6 +15,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import slimeknights.tconstruct.library.utils.TagUtil;
+import slimeknights.tconstruct.library.utils.TinkerUtil;
 
 public class ConarmEventHandler {
 
@@ -39,10 +40,9 @@ public class ConarmEventHandler {
     public void onTooltips(ItemTooltipEvent event) {
         ItemStack stack = event.getItemStack();
 
-        if(stack.getItem() instanceof TinkersArmor && stack.hasTagCompound()) {
-            NBTTagList tagList = TagUtil.getModifiersTagList(stack);
-            NBTTagCompound tag = LevelHelper.getTag(tagList);
-            ModNBT modData = LevelHelper.getModData(tag);
+        if(stack.getItem() instanceof TinkersArmor) {
+            NBTTagCompound modifierTag = TinkerUtil.getModifierTag(stack, LevelingModConarm.INSTANCE.identifier);
+            ModNBT modData = LevelHelper.getModData(modifierTag);
             LevelHelper.Level level = LevelHelper.getLevelFrom(modData.level);
             if(!Tooltips.isShiftDown() || !Tooltips.isCTRLDown()) event.getToolTip().add(1, new TextComponentTranslation("tooltip.xp", new TextComponentTranslation(level.getName()).getFormattedText(), modData.exp, level.getMaxXP()).getFormattedText());
         }

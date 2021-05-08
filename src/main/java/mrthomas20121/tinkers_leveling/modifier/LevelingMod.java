@@ -22,7 +22,7 @@ public class LevelingMod extends ProjectileModifierTrait {
 
     private LevelingMod() {
         super("leveling_mod", 0x0);
-        addAspects(new ModifierAspect.DataAspect(this));
+        this.aspects.add(new ModifierAspect.DataAspect(this));
     }
 
     @Override

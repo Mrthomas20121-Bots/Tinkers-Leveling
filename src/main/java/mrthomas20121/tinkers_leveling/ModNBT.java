@@ -9,7 +9,6 @@ public class ModNBT extends ModifierNBT {
 
     public ModNBT() {
         super();
-        exp = 0;
     }
 
     public ModNBT(NBTTagCompound tag) {

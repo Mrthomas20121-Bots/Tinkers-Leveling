@@ -142,14 +142,10 @@ public class LevelHelper {
         tag.attackSpeedMultiplier+= level.getToolBonus(tag.attackSpeedMultiplier);
         tag.attack+= level.getToolBonus(tag.attack);
         tag.harvestLevel++;
+        tag.modifiers++;
         tag.speed+= level.getToolBonus(tag.speed);
         tag.durability+= level.getToolBonus(tag.durability);
         TagUtil.setToolTag(stack, tag.get());
-
-        // update the modifier slots
-        NBTTagCompound tooltag = TagUtil.getToolTag(stack);
-        int modifiers = tooltag.getInteger(Tags.FREE_MODIFIERS)+1;
-        tooltag.setInteger(Tags.FREE_MODIFIERS, Math.max(0, modifiers));
     }
 
     public static NBTTagCompound getTag(NBTTagList tagList) {
