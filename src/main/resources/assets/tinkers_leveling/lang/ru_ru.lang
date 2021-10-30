@@ -1,0 +1,10 @@
+tooltip.xp=%s/%s xp
+
+tooltip.level.1=§bНачинающий
+tooltip.level.2=§dНовобранец
+tooltip.level.3=§aЗнаток
+tooltip.level.4=§cЭксперт
+tooltip.level.5=§4Профессионал
+tooltip.level.6=§5Мастер
+
+message.levelup=§bТы перешёл с §a%s§b на §a%s§b уровень!
