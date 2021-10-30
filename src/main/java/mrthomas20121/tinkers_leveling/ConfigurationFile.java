@@ -22,6 +22,6 @@ public class ConfigurationFile {
     public static class ConfigFile {
 
         @Config.Comment("Tool Stats Multiplier")
-        public static double toolStatsMultiplier = 0.8;
+        public static double toolStatsMultiplier = 0.1d;
     }
 }

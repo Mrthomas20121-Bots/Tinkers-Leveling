@@ -1,2 +1,2 @@
 # Tinkers' Leveling
-This mod let you level up your tools. Not Compatible with Tinkers Tools Leveling
+Level up your Tinkers tools. not compatible with Tinkers Tools Leveling.
